@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Changa+One:ital@0;1&family=DynaPuff:wght@400..700&family=Goldman:wght@400;700&family=Outfit:wght@100..900&family=Stack+Sans+Notch:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(90deg, #000000, #0d2818, #000000);
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        #navContainer{
+            height: 75px;
+            width: 100 vw;
+            background:linear-gradient(90deg , black , rgb(53, 52, 52));
+             nav{
+                height: 100%;
+                width: 95%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin:auto;
+
+                img{
+                    border-radius: 20px;
+                }
+
+                p{
+                    color: white;
+                    font-family: "Outfit", sans-serif;
+                    font-size: 30px;
+                }
+                ul{
+                   list-style: none;
+                   display: flex;
+                   align-items: center;
+                   font-family: "Outfit", sans-serif;
+                   text-decoration : none;
+
+                  li{
+                    margin: 0px 30px;
+                    font-size: 20px;
+                    color: white;
+
+
+                    button{
+                    border-radius: 20px;
+                    background: linear-gradient(#0E6E56, #0B2415);
+                    font-size: 16px;
+                    color: white;
+                    height: 45px;
+                    width: 110px;
+                    font-family: "Outfit", sans-serif;
+                    border: none;
+                    cursor: pointer;
+
+                   }
+
+                       a{
+                          text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+       #mainBody{
+        height: 80vh;
+        width: 45vw;
+        border: solid ,#06170D , 1px;
+        box-shadow: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 50px;
+        top: 120px;
+
+        nav{
+            height: 100%;
+            width: 95%;
+            /* border: solid , white; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            #upperButton{
+                border-radius: 20px;
+                width: 300px;
+                height: 40px;
+                position: absolute;
+                top: 30px;
+                font-size: 20px;
+                color: white;
+                backdrop-filter: blur();
+                background: linear-gradient(#0E6E56, #488c7b8d , #353434 );
+                font-family: "Outfit", sans-serif;
+            }
+            h1{
+                position: absolute;
+                top: 130px;
+                left: 170px;
+                font-size: 60px;
+                color: rgb(251, 247, 241);
+                font-family: "Outfit", sans-serif;
+
+                #s2{
+                    color:#9CE963 ;
+                }
+
+                div{
+                    position: relative;
+                    left: 50px
+                }
+            }
+            #div1{
+                position: relative;
+                left: 170px;
+                top: 80px;
+                color: white;
+                font-size: 18.5px;
+                font-family: "Outfit", sans-serif;
+            }
+            #lowerButton1{
+                height: 70px;
+                width: 150px;
+                position: relative;
+                top: 220px;
+                right: 210px;
+                font-size: 20px;
+                border-radius: 15px;
+                background-color: transparent;
+                background: linear-gradient(#1A1919, black);
+                color: white;
+                font-family: "Outfit", sans-serif;
+            }
+            #lowerButton2{
+                height: 70px;
+                width: 150px;
+                position: relative;
+                top: 220px;
+                right: 50px;
+                font-size: 21px;
+                border-radius: 15px;
+                background-color: transparent;
+                background: linear-gradient(#1A1919, black);
+                color: white;
+                font-family: "Outfit", sans-serif;
+            }
+          }
+       }
+
+       #img1{
+        position: relative;
+        left: 900px;
+        top: 70px;
+        border-radius: 20px;
+        z-index: 7;
+       }
+       #img2{
+        position: relative;
+        left: 1100px;
+        border-radius: 20px;
+        height: 300px;
+        width: 300px;
+        z-index: 6;
+       }
+       #img3{
+        position: relative;
+        bottom:70px;
+        left: 900px;
+        border-radius: 20px;
+       }
+       #featuresSection{
+            width: 100%;
+            padding: 80px 60px;
+            border-top: 1px solid #1a3a25;
+        }
+
+        #featuresTop{
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        #featuresTag{
+            display: inline-block;
+            background: linear-gradient(#0E6E56, #0B2415);
+            color: #9CE963;
+            font-family: "Outfit", sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 8px 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        #featuresTitle{
+            font-family: "Outfit", sans-serif;
+            font-size: 42px;
+            font-weight: 700;
+            color: rgb(251, 247, 241);
+            margin-bottom: 14px;
+            line-height: 1.2;
+        }
+
+        #featuresTitle span{
+            color: #9CE963;
+        }
+
+        #featuresSubtitle{
+            font-family: "Outfit", sans-serif;
+            font-size: 17px;
+            color: #aaa;
+            max-width: 500px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        #featuresGrid{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .featureCard{
+            background: #0d1f15;
+            border: 1px solid #2a5a3a;
+            border-radius: 16px;
+            padding: 32px 28px;
+            transition: border-color 0.3s, transform 0.3s, background 0.3s;
+        }
+
+        .featureCard:hover{
+            border-color: #9CE963;
+            transform: translateY(-6px);
+            background: #0f2a1a;
+        }
+
+        .featureCardTitle{
+            font-family: "Outfit", sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: rgb(251, 247, 241);
+            margin-bottom: 12px;
+        }
+
+        .featureCardDesc{
+            font-family: "Outfit", sans-serif;
+            font-size: 15px;
+            color: #aaa;
+            line-height: 1.7;
+        }
+
+        #lowBox{
+            margin: 60px 60px 80px;
+            background: linear-gradient(90deg, #0E6E56, #0B2415);
+            border-radius: 20px;
+            padding: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #2a5a3a;
+        }
+
+        #lowBoxText{
+            font-family: "Outfit", sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: white;
+            max-width: 500px;
+            line-height: 1.3;
+        }
+
+        #lowBoxText span{
+            color: #9CE963;
+        }
+
+        #lBButton{
+            background: #9CE963;
+            color: #000;
+            border: none;
+            padding: 16px 36px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: "Outfit", sans-serif;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: opacity 0.2s, transform 0.2s;
+        }
+
+        #lBButton:hover{
+            opacity: 0.85;
+            transform: translateY(-2px);
+        }
+
+        #footerBar{
+            border-top: 1px solid #1a3a25;
+            padding: 24px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #footerLogo{
+            font-family: "Outfit", sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            color: white;
+        }
+
+        #footerLogo span{
+            color: #9CE963;
+        }
+
+        #footerText{
+            font-family: "Outfit", sans-serif;
+            font-size: 13px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+<section id="navContainer">
+    <nav>
+        <picture>
+            <a href=""><img src="/project-img/spendlyLogo.jpeg" alt="spendly" height="75px" width="200px" ></a>
+        </picture>
+        <p>SPEND SMARTER , LIVE BETTER</p>
+
+        <ul>
+            <a href="/landing.html"><li>Home</li></a>
+            <a href="/landing.html"><li>About us</li></a>
+            <a href="/login.html"><li>Log In</li></a>
+            <a href="/Register.html"><li><button>Get Started</button></li></a>
+        </ul>
+    </nav>
+</section>
+<section id="mainBody">
+    <nav id="innerBody">
+        <button id="upperButton">Smart Finance for everyone</button>
+        <div>
+            <h1> Take Control
+                <div><span id="s1">of your</span></div>
+                <span id ="s2"> money today!</span>
+            </h1>
+            <div id="div1">
+                <div>Track expenses, set budgets, and reach </div>
+                <div>your financial goals -- all in one place.</div>
+                <div>Simple, smart , and free to start.</div>
+            </div>
+        </div>
+        <div><a href="/Register.html"><button id="lowerButton1">Get Started Free</button></a></div>
+        <div id="div3"><a href="/login.html"><button id="lowerButton2">See how it works</button></a></div>
+    </nav>
+</section>
+<img id="img1" src="/project-img/piggy.jpeg" alt="piggy" height="250px" width="300px">
+<img src="/project-img/growBusi.jpeg" id="img2" alt="" height="300px" width="200px">
+<img src="/project-img/MoneyAffirm.jpeg" id="img3" alt="money" height="300px" width="300px">
+
+<section id="featuresSection">
+    <div id="featuresTop">
+        <div id="featuresTag">Why SpendLy?</div>
+        <h2 id="featuresTitle">Everything you need to manage <span>money smarter</span></h2>
+        <p id="featuresSubtitle">Simple tools to track, plan, and grow your finances — built for real people.</p>
+    </div>
+
+    <div id="featuresGrid">
+
+        <div class="featureCard">
+            <div class="featureCardTitle">Expense Tracking</div>
+            <div class="featureCardDesc">Add, edit and delete your daily expenses with categories like Food, Travel, Bills and more. Stay on top of every rupee you spend.</div>
+        </div>
+
+        <div class="featureCard">
+            <div class="featureCardTitle">Income Tracking</div>
+            <div class="featureCardDesc">Track your income sources alongside expenses to always know your real financial balance and how much you can save each month.</div>
+        </div>
+
+        <div class="featureCard">
+            <div class="featureCardTitle">Total Balance</div>
+            <div class="featureCardDesc">Always know your current balance. SpendLy automatically calculates your total income minus total expenses in real time.</div>
+        </div>
+
+        <div class="featureCard">
+            <div class="featureCardTitle">Monthly Summary</div>
+            <div class="featureCardDesc">View your spending broken down by month. Understand your financial patterns and plan better for the months ahead.</div>
+        </div>
+
+        <div class="featureCard">
+            <div class="featureCardTitle">Smart Search</div>
+            <div class="featureCardDesc">Instantly search and filter expenses by name, category or date range. Find any transaction in seconds no matter how old it is.</div>
+        </div>
+
+        <div class="featureCard">
+            <div class="featureCardTitle">Savings Goals</div>
+            <div class="featureCardDesc">Set a savings target and track your progress visually. Stay motivated and reach your financial goals faster every month.</div>
+        </div>
+
+    </div>
+</section>
+
+<div id="lowBox">
+    <div id="lowBoxText">Start tracking your expenses <span>today for free</span></div>
+    <button id="lBButton" onclick="window.location.href='index.html'">Get Started Now</button>
+</div>
+
+<div id="footerBar">
+    <div id="footerLogo">Spend<span>Ly</span></div>
+    <div id="footerText">2026 SpendLy. Built with Spring Boot and MySQL.</div>
+</div>
+
+</body>
+</html>
